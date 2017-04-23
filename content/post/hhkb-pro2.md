@@ -7,3 +7,4 @@ title = "HHKB-Pro 2 開箱"
 
 +++
 
+![hhkb](/image/hhkb-amazon.png)

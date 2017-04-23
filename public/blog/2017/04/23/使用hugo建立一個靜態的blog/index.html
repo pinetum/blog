@@ -161,11 +161,70 @@ theme = &quot;hyde-x&quot;
 ...
 </code></pre>
 
-<h4 id="關於圖片">關於圖片</h4>
+<h4 id="顯示圖片">顯示圖片</h4>
 
 <p><img src="/image/creake-hugo-blog.png" alt="hugo blog" />
 將圖片檔放置在<code>static/image/</code>資料夾中(於static下，資料夾路徑可自訂)
 加入<code>![hugo blog](/image/creake-hugo-blog.png)</code>即可顯示圖片</p>
+
+<h4 id="如何自動化上傳到github上">如何自動化上傳到github上</h4>
+
+<p>1.將git設定好</p>
+
+<pre><code class="language-bash"># 初始化 git
+git init
+# 新建 gh-pages branch，用來存放產生的靜態html檔案
+git checkout -b gh-pages
+# 新建 blog branch，用來存放編輯的檔案
+git checkout -b blog
+git add -A
+# 先於github開好repository並加入遠端列表中
+git remote add origin https://github.com/user/repo.git
+</code></pre>
+
+<p>2.寫你的文章吧！</p>
+
+<p>3.寫完文章好只要執行這個自動化的script，就可以自動上傳到github上</p>
+
+<pre><code class="language-bash">#!/bin/zsh
+cd ~/path/to/hugosite
+git checkout blog
+hugo
+git add -A
+git commit -m &quot;update content&quot;
+rm -rf /tmp/blog
+cp -r public/ /tmp/blog
+git checkout gh-pages
+cp -rf /tmp/blog/* ./
+rm -rf /tmp/blog
+git add -A
+git commit -m &quot;update content&quot;
+git push --all origin
+git checkout blog
+</code></pre>
+
+<p>網站網址就會是 <code>github使用這名稱.github.io/建立的repo名稱</code></p>
+
+<h4 id="如果要使用自訂網域">如果要使用自訂網域</h4>
+
+<p>1.github-&gt;設定-&gt;Custom domain&ndash;&gt;將自己的domain name加上去</p>
+
+<p>或是</p>
+
+<p>建立一個<code>CNAME</code>檔案，並將網域名稱寫在裡面</p>
+
+<p>例如：</p>
+
+<pre><code>blog.qtlin.tw
+</code></pre>
+
+<p>2.接著去設定你的DNS代管新增兩筆<code>A</code>records</p>
+
+<p>&ndash;&gt; 192.30.252.153</p>
+
+<p>&ndash;&gt; 192.30.252.154</p>
+
+<p>關於github page的資訊可以參考<a href="https://help.github.com/categories/customizing-github-pages/" target="_blank">官方文件</a></p>
 
   </div>
   <div id="disqus_thread"></div>

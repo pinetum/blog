@@ -62,7 +62,66 @@ theme = "hyde-x"
 ...
 ```
 
-#### 關於圖片
+#### 顯示圖片
 ![hugo blog](/image/creake-hugo-blog.png)
 將圖片檔放置在`static/image/`資料夾中(於static下，資料夾路徑可自訂)
 加入`![hugo blog](/image/creake-hugo-blog.png)`即可顯示圖片
+
+#### 如何自動化上傳到github上
+
+1.將git設定好
+```bash
+# 初始化 git
+git init
+# 新建 gh-pages branch，用來存放產生的靜態html檔案
+git checkout -b gh-pages
+# 新建 blog branch，用來存放編輯的檔案
+git checkout -b blog
+git add -A
+# 先於github開好repository並加入遠端列表中
+git remote add origin https://github.com/user/repo.git
+```
+
+2.寫你的文章吧！
+
+3.寫完文章好只要執行這個自動化的script，就可以自動上傳到github上
+
+```bash
+#!/bin/zsh
+cd ~/path/to/hugosite
+git checkout blog
+hugo
+git add -A
+git commit -m "update content"
+rm -rf /tmp/blog
+cp -r public/ /tmp/blog
+git checkout gh-pages
+cp -rf /tmp/blog/* ./
+rm -rf /tmp/blog
+git add -A
+git commit -m "update content"
+git push --all origin
+git checkout blog
+```
+
+網站網址就會是 `github使用這名稱.github.io/建立的repo名稱`
+
+#### 如果要使用自訂網域
+1.github->設定->Custom domain-->將自己的domain name加上去
+
+或是
+
+建立一個`CNAME`檔案，並將網域名稱寫在裡面
+
+例如：
+```
+blog.qtlin.tw
+```
+
+2.接著去設定你的DNS代管新增兩筆`A`records
+
+--> 192.30.252.153
+
+--> 192.30.252.154
+
+關於github page的資訊可以參考[官方文件](https://help.github.com/categories/customizing-github-pages/)
