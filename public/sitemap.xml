@@ -27,11 +27,6 @@
   </url>
   
   <url>
-    <loc>/blog/2017/04/18/%E6%B8%AC%E8%A9%A6%E6%96%87/</loc>
-    <lastmod>2017-04-18T07:23:23+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/license/</loc>
   </url>
   
@@ -61,12 +56,6 @@
   <url>
     <loc>/</loc>
     <lastmod>2017-04-23T01:07:32+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/test/</loc>
-    <lastmod>2017-04-18T07:23:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
