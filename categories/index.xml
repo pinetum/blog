@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Qtlin.tw blog</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Qtlin.tw blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang</title>
+      <link>/categories/golang/</link>
+      <pubDate>Sun, 23 Apr 2017 00:22:30 +0800</pubDate>
+      
+      <guid>/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/categories/hugo/</link>
+      <pubDate>Sun, 23 Apr 2017 00:22:30 +0800</pubDate>
+      
+      <guid>/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>/categories/test/</link>
+      <pubDate>Tue, 18 Apr 2017 07:23:23 +0800</pubDate>
+      
+      <guid>/categories/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>敗家</title>
+      <link>/categories/%E6%95%97%E5%AE%B6/</link>
+      <pubDate>Sun, 23 Apr 2017 01:07:32 +0800</pubDate>
+      
+      <guid>/categories/%E6%95%97%E5%AE%B6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

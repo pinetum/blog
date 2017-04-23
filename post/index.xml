@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Qtlin.tw blog</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Qtlin.tw blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Sun, 23 Apr 2017 01:07:32 +0800</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HHKB-Pro 2 開箱</title>
+      <link>/blog/2017/04/23/hhkb-pro-2-%E9%96%8B%E7%AE%B1/</link>
+      <pubDate>Sun, 23 Apr 2017 01:07:32 +0800</pubDate>
+      
+      <guid>/blog/2017/04/23/hhkb-pro-2-%E9%96%8B%E7%AE%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>使用hugo建立一個靜態的blog</title>
+      <link>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</link>
+      <pubDate>Sun, 23 Apr 2017 00:22:30 +0800</pubDate>
+      
+      <guid>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</guid>
+      <description>Hugo := markdown files-&amp;gt;&amp;gt;static html web site
+Hugo  快速+現代的網站引擎 跨平台 使用golang撰寫 開源而且免費 根據自己的作業系統下載編譯好的可執行檔  優點：
+ 據說很快！（等文章多了以後再回來研究是有多快, 呵呵） 搭配github page使用無限流量，省去維護主機的成本 不用擔心部落格供應商倒閉 功能不夠可以自己fork增加或修改 比較不用擔心網站被打下來（？） 官方有很完整的user guide可以參考  缺點：
+ 寫完文章後要自己把靜態網頁上傳到主機上（例如push到github上） 無法輕易的對圖片做排版 使用Markdown，對於一般使用者有門檻(Blackfriday) 需要自己找放置靜態網頁的地方  網站掛了不能找客服嘴砲  安裝 使用brew可以快速的在macOS上安裝
+$ brew update &amp;amp;&amp;amp; brew install hugo  基本指令 懶人就只要記這些啦ob&amp;rsquo;_&amp;lsquo;ov
+# 建立新的網站 $ hugo new site bookshelf # 建立新頁面 $ hugo new about.md # 建立新文章（部落格使用時） $ hugo new post/hello-world.md # 建立Server可以使用瀏覽器預覽，於修改markdown檔案時會自動重新整理網頁 $ hugo server # 產生靜態html檔案到public資料夾內 $ hugo  Themes 想要潮一點，請到Hugo Themes Site挑一個順眼的主題來安裝。 基本上主題的簡介都會有安裝的流程說明，將主題下載後放到hugo目錄下的themes目錄，並根據所選主題修改config.</description>
+    </item>
+    
+    <item>
+      <title>測試文</title>
+      <link>/blog/2017/04/18/%E6%B8%AC%E8%A9%A6%E6%96%87/</link>
+      <pubDate>Tue, 18 Apr 2017 07:23:23 +0800</pubDate>
+      
+      <guid>/blog/2017/04/18/%E6%B8%AC%E8%A9%A6%E6%96%87/</guid>
+      <description>CH13 Web Server Development 本章學習重點 - 建立可存取的路徑 - 對可存取的路徑做權限管控 - 取得傳入的參數 - 對已存在的handler修改 - 使用RPC API
+建立可存取的路徑 例如：http://127.0.0.1:8069/my_module/books
+ 於controllers/init.py加入import main 於init.py加入import controllers 建立controllers/main.py  from openerp import http from openerp.http import request class Main(http.Controller): @http.route(&#39;/my_module/books&#39;, type=&#39;http&#39;, auth=&#39;none&#39;) def books(self): records = request.env[&#39;library.book&#39;].sudo().search([]) result = &#39;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&#39; result += &#39;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&#39;.join( records.mapped(&#39;name&#39;)) result += &#39;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&#39; return result @http.route(&#39;/my_module/books/json&#39;, type=&#39;json&#39;, auth=&#39;none&#39;) def books_json(self): records = request.env[&#39;library.book&#39;]\ .sudo().search([]) return records.read([&#39;name&#39;])   @http.route:decorator，用來告知odoo此method是web accessible，且可以將多個網址路徑對應到同一個method中 return something:根據decorator中定義的type需要回傳的物件會有所不同</description>
+    </item>
+    
+  </channel>
+</rss>
