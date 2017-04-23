@@ -53,8 +53,7 @@ $ hugo server
 $ hugo  
 ```
 #### Themes
-想要潮一點，請到[Hugo Themes Site](https://themes.gohugo.io)挑一個順眼的主題來安裝。
-基本上主題的簡介都會有安裝的流程說明，將主題下載後放到hugo目錄下的`themes`目錄，並根據所選主題修改config.toml檔案。
+想要潮一點，請到[Hugo Themes Site](https://themes.gohugo.io)挑一個順眼的主題來安裝，基本上主題的簡介都會有安裝的流程說明，將主題下載後放到hugo目錄下的`themes`目錄，並根據所選主題修改config.toml檔案。
 ```
 ...
 # 主題
