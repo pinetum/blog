@@ -67,7 +67,7 @@ paginate = 10
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
-    tagline = "一隻優雅宅"
+    tagline = "一隻肥宅"
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Blog".
