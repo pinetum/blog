@@ -13,10 +13,10 @@
     
     <item>
       <title>使用hugo建立一個靜態的blog</title>
-      <link>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</link>
+      <link>/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</link>
       <pubDate>Sun, 23 Apr 2017 00:22:30 +0800</pubDate>
       
-      <guid>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</guid>
+      <guid>/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</guid>
       <description>Hugo := markdown files-&amp;gt;&amp;gt;static html web site
 Hugo  快速+現代的網站引擎 跨平台 使用golang撰寫 開源而且免費 根據自己的作業系統下載編譯好的可執行檔  優點：
  據說很快！（等文章多了以後再回來研究是有多快, 呵呵） 搭配github page使用無限流量，省去維護主機的成本 不用擔心部落格供應商倒閉 功能不夠可以自己fork增加或修改 比較不用擔心網站被打下來（？） 官方有很完整的user guide可以參考  缺點：
