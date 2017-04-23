@@ -23,7 +23,7 @@ menu = "main"
 ### WORK EXPERIENCE
 ---
 #### Yuan-Ze University - Communications Engineering
-- [Multimedia Processing and Telemedicine Lab](http://www.comm.yzu.edu.tw/english/labPoster/Poster/70808.pdf)
+- [Multimedia Processing and Telemedicine Lab](http://www.crc.yzu.edu.tw/labPoster/Poster/70808.pdf)
 - 2015/03-2016/08
 - Research Assistant
 
