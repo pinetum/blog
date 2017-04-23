@@ -48,7 +48,7 @@ paginate = 10
     highlight = "sunburst"
 
     # Optional additional custom CSS file URL, will override other styles.
-    customCSS = "static/css/override_.css"
+    customCSS = "/static/css/override_.css"
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
