@@ -3,7 +3,7 @@ categories = ["golang", "hugo"]
 date = "2017-04-23T00:22:30+08:00"
 description = "Hugo := markdown files->>static html web site"
 keywords = ["hugo", "golang"]
-title = "使用hugo建立一個靜態的blog"
+title = "使用hugo建立靜態的blog"
 
 +++
 Hugo := markdown files->>static html web site
@@ -28,7 +28,7 @@ Hugo := markdown files->>static html web site
 
 - 寫完文章後要自己把靜態網頁上傳到主機上（例如push到github上）
 - 無法**輕易**的對圖片做排版
-- 使用[Markdown](http://markdown.tw)，對於一般使用者有門檻([Blackfriday](https://github.com/russross/blackfriday))
+- 使用[Markdown](http://markdown.tw)，對於一般使用者有一定的門檻
 - 需要自己找放置靜態網頁的地方
 - 
 ~~網站掛了不能找客服嘴砲~~
@@ -83,7 +83,7 @@ git remote add origin https://github.com/user/repo.git
 
 2.寫你的文章吧！
 
-3.寫完文章好只要執行這個自動化的script，就可以自動上傳到github上
+3.寫完文章好只要執行這個自動化的script，可以將部落格上傳到github上
 
 ```bash
 #!/bin/zsh
@@ -103,7 +103,7 @@ git push --all origin
 git checkout blog
 ```
 
-網站網址就會是 `github使用這名稱.github.io/建立的repo名稱`
+網站網址就會是 `github使用者名稱.github.io/建立的repo名稱`
 
 #### 如果要使用自訂網域
 1.github->設定->Custom domain-->將自己的domain name加上去

@@ -12,24 +12,28 @@
     
     
     <item>
-      <title>HHKB-Pro 2 開箱</title>
-      <link>/2017/04/23/hhkb-pro-2-%E9%96%8B%E7%AE%B1/</link>
+      <title>PFU HHKB Pro 2 墨色 無刻</title>
+      <link>/blog/2017/04/23/pfu-hhkb-pro-2-%E5%A2%A8%E8%89%B2-%E7%84%A1%E5%88%BB/</link>
       <pubDate>Sun, 23 Apr 2017 01:07:32 +0800</pubDate>
       
-      <guid>/2017/04/23/hhkb-pro-2-%E9%96%8B%E7%AE%B1/</guid>
-      <description></description>
+      <guid>/blog/2017/04/23/pfu-hhkb-pro-2-%E5%A2%A8%E8%89%B2-%E7%84%A1%E5%88%BB/</guid>
+      <description>心中一直有一個願望
+擁有一支好打、順手的鍵盤，但又不想一把換過一把，掉入鍵盤坑裡。 據說去年中就已經開始可以在Amazon訂貨，不用透過代買，直接寄送到台灣，這是一件多麽方便的事情啊！！
+所以不小心就按下了訂購按鈕&amp;hellip;&amp;hellip; 如何在Macbook上使用得順手 第一步當然是直接把鍵盤架在原本的鍵盤上！ 不過這樣放下去以後，常常會壓到原本內建鍵盤的按鍵，所以我們需要使用Karabiner設定在插入外接鍵盤時，停用內建鍵盤
+但是Karabiner目前並不支援MacOS 10.12，而MacOS 10.12的使用者需要改用Karabiner-Elements，可以直接下載最新版本
+下載安裝後開啟Preference&amp;hellip;，將Disable the built-in keyboard while selected devices is connected.開啟，並把hhkb打勾以後，使用hhkb時內建鍵盤就會失效。（但是電源鍵似乎無解） 後記 如果有人跟我一樣買無刻，會發現其實前幾天使用其實是需要看看layout的，因為與傳統鍵盤有些許不同 或許你會需要這張高畫質的圖片 圖片來源</description>
     </item>
     
     <item>
-      <title>使用hugo建立一個靜態的blog</title>
-      <link>/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</link>
+      <title>使用hugo建立靜態的blog</title>
+      <link>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</link>
       <pubDate>Sun, 23 Apr 2017 00:22:30 +0800</pubDate>
       
-      <guid>/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</guid>
+      <guid>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</guid>
       <description>Hugo := markdown files-&amp;gt;&amp;gt;static html web site
 Hugo  快速+現代的網站引擎 跨平台 使用golang撰寫 開源而且免費 根據自己的作業系統下載編譯好的可執行檔  優點：
  據說很快！（等文章多了以後再回來研究是有多快, 呵呵） 搭配github page使用無限流量，省去維護主機的成本 不用擔心部落格供應商倒閉 功能不夠可以自己fork增加或修改 比較不用擔心網站被打下來（？） 官方有很完整的user guide可以參考  缺點：
- 寫完文章後要自己把靜態網頁上傳到主機上（例如push到github上） 無法輕易的對圖片做排版 使用Markdown，對於一般使用者有門檻(Blackfriday) 需要自己找放置靜態網頁的地方  網站掛了不能找客服嘴砲  安裝 使用brew可以快速的在macOS上安裝
+ 寫完文章後要自己把靜態網頁上傳到主機上（例如push到github上） 無法輕易的對圖片做排版 使用Markdown，對於一般使用者有一定的門檻 需要自己找放置靜態網頁的地方  網站掛了不能找客服嘴砲  安裝 使用brew可以快速的在macOS上安裝
 $ brew update &amp;amp;&amp;amp; brew install hugo  基本指令 懶人就只要記這些啦ob&amp;rsquo;_&amp;lsquo;ov
 # 建立新的網站 $ hugo new site bookshelf # 建立新頁面 $ hugo new about.md # 建立新文章（部落格使用時） $ hugo new post/hello-world.md # 建立Server可以使用瀏覽器預覽，於修改markdown檔案時會自動重新整理網頁 $ hugo server # 產生靜態html檔案到public資料夾內 $ hugo  Themes 想要潮一點，請到Hugo Themes Site挑一個順眼的主題來安裝，基本上主題的簡介都會有安裝的流程說明，將主題下載後放到hugo目錄下的themes目錄，並根據所選主題修改config.</description>
     </item>

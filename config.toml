@@ -6,8 +6,23 @@ MetaDataFormat = "toml"
 theme = "hyde-x"
 paginate = 10
 
+
+
 [blackfriday]
    hrefTargetBlank = true
+
+
+[[menu.main]]
+    name="Projects"
+    weight=2
+    url="/projects"
+
+[[menu.main]]
+    name="Resume"
+    weight=3
+    url="http://qtlin.tw"
+
+
 
 [author]
     name = "qtlintw"
@@ -15,7 +30,7 @@ paginate = 10
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
     # The format shown here is the same one Jekyll/Octopress uses by default.
-    post = "/:year/:month/:day/:title/"
+    post = "/blog/:year/:month/:day/:title/"
 
 [taxonomies]
     # Optional. Use if you want tags and lists.
@@ -48,7 +63,7 @@ paginate = 10
     highlight = "sunburst"
 
     # Optional additional custom CSS file URL, will override other styles.
-    customCSS = "/static/css/override_.css"
+    customCSS = "static/css/override_.css"
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
@@ -59,7 +74,7 @@ paginate = 10
     home = "Blog"
 
     # Metadata used to drive integrations.
-    googleAnalytics = "Your Google Analytics tracking code"
+    googleAnalytics = "UA-80879951-3"
     # gravatarHash = "MD5 hash of your Gravatar email address"
 
     # Sidebar social links, these must be full URLs.

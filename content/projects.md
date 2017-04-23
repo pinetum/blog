@@ -2,7 +2,6 @@
 date = "2017-04-18T08:09:17+08:00"
 description = ""
 title = "Projects"
-menu = "main"
 +++
 
 - [AirUnlock](#airunlock-http-airunlock-qtlin-tw)
