@@ -64,4 +64,5 @@ theme = "hyde-x"
 
 #### 關於圖片
 ![hugo blog](/image/creake-hugo-blog.png)
-目前尚未找到簡單的方法來靠左或靠又顯示的方式......
+將圖片檔放置在`static/image/`資料夾中(於static下，資料夾路徑可自訂)
+加入`![hugo blog](/image/creake-hugo-blog.png)`即可顯示圖片
