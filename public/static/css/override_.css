@@ -19,3 +19,7 @@
        url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
        url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
 }
+
+.sidebar-about img{
+    border-radius: 50%;
+}

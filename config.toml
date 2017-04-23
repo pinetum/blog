@@ -75,7 +75,7 @@ paginate = 10
 
     # Metadata used to drive integrations.
     googleAnalytics = "UA-80879951-3"
-    # gravatarHash = "MD5 hash of your Gravatar email address"
+    gravatarHash = "60c67aaad4f1c453fc912ed7ebaa2f10"
 
     # Sidebar social links, these must be full URLs.
     github = "https://github.com/pinetum"
