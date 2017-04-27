@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/blog/2017/04/27/%E7%B5%A6%E7%A8%8B%E5%BC%8F%E4%BA%BA%E5%B0%88%E7%94%A8%E7%9A%84%E7%AD%89%E5%AF%AC%E9%80%A3%E5%AD%97%E5%AD%97%E5%9E%8B-firacode/</loc>
+    <lastmod>2017-04-27T21:25:06+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2017/04/23/pfu-hhkb-pro-2-%E5%A2%A8%E8%89%B2-%E7%84%A1%E5%88%BB/</loc>
     <lastmod>2017-04-23T01:07:32+08:00</lastmod>
   </url>
@@ -49,13 +54,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-04-23T01:07:32+08:00</lastmod>
+    <lastmod>2017-04-27T21:25:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-04-23T01:07:32+08:00</lastmod>
+    <lastmod>2017-04-27T21:25:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%AD%97%E5%9E%8B/</loc>
+    <lastmod>2017-04-27T21:25:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
