@@ -9,7 +9,7 @@ title = "給程式人專用的等寬連字字型 Firacode"
 
 
 
-#### [Firacode 等寬，專門為程式碼所設計的連字字體](https://github.com/tonsky/FiraCode/blob/master/README.md)
+#### [Firacode 專門為程式碼所設計的連字字體](https://github.com/tonsky/FiraCode/blob/master/README.md)
 ![firacode](/image/firacode.png)
 ![a](https://github.com/tonsky/FiraCode/raw/master/showcases/all_ligatures.png)
 
