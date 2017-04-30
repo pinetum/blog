@@ -13,10 +13,10 @@
     
     <item>
       <title>給程式人專用的等寬連字字型 Firacode</title>
-      <link>/blog/2017/04/27/%E7%B5%A6%E7%A8%8B%E5%BC%8F%E4%BA%BA%E5%B0%88%E7%94%A8%E7%9A%84%E7%AD%89%E5%AF%AC%E9%80%A3%E5%AD%97%E5%AD%97%E5%9E%8B-firacode/</link>
+      <link>/post/firacode-ligatures-font/</link>
       <pubDate>Thu, 27 Apr 2017 21:25:06 +0800</pubDate>
       
-      <guid>/blog/2017/04/27/%E7%B5%A6%E7%A8%8B%E5%BC%8F%E4%BA%BA%E5%B0%88%E7%94%A8%E7%9A%84%E7%AD%89%E5%AF%AC%E9%80%A3%E5%AD%97%E5%AD%97%E5%9E%8B-firacode/</guid>
+      <guid>/post/firacode-ligatures-font/</guid>
       <description> Firacode 專門為程式碼所設計的連字字體 等寬字體 vs. 比例字體 目前大部分的編輯器與IDE幾乎都支援Ligature font，只要下載字體安裝到系統中並將編輯器字體調整即可，少數編輯器有較特別的設定方式，可以參考官方的support list &amp;amp; instructions
 以VS code為例，因為設定部分目前沒有GUI畫面可以使用，需要修改setting.json設定檔（透過Code-&amp;gt;Perfence-&amp;gt;Setting開啟 或是以快捷鍵⌘ + ,）
 { ... &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Fira Code&amp;quot;, &amp;quot;editor.fontLigatures&amp;quot;: true, &amp;quot;editor.fontSize&amp;quot;: 14, ... }  </description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>PFU HHKB Pro 2 墨色 無刻</title>
-      <link>/blog/2017/04/23/pfu-hhkb-pro-2-%E5%A2%A8%E8%89%B2-%E7%84%A1%E5%88%BB/</link>
+      <link>/post/hhkb-pro2/</link>
       <pubDate>Sun, 23 Apr 2017 01:07:32 +0800</pubDate>
       
-      <guid>/blog/2017/04/23/pfu-hhkb-pro-2-%E5%A2%A8%E8%89%B2-%E7%84%A1%E5%88%BB/</guid>
+      <guid>/post/hhkb-pro2/</guid>
       <description>心中一直有一個願望
 擁有一支好打、順手的鍵盤，但又不想一把換過一把，掉入鍵盤坑裡。 據說去年中就已經開始可以在Amazon訂貨，不用透過代買，直接寄送到台灣，這是一件多麽方便的事情啊！！
 所以不小心就按下了訂購按鈕&amp;hellip;&amp;hellip; 如何在Macbook上使用得順手 第一步當然是直接把鍵盤架在原本的鍵盤上！ 不過這樣放下去以後，常常會壓到原本內建鍵盤的按鍵，所以我們需要使用Karabiner設定在插入外接鍵盤時，停用內建鍵盤
@@ -37,10 +37,10 @@
     
     <item>
       <title>使用hugo建立靜態的blog</title>
-      <link>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</link>
+      <link>/post/create-blog-with-hugo/</link>
       <pubDate>Sun, 23 Apr 2017 00:22:30 +0800</pubDate>
       
-      <guid>/blog/2017/04/23/%E4%BD%BF%E7%94%A8hugo%E5%BB%BA%E7%AB%8B%E9%9D%9C%E6%85%8B%E7%9A%84blog/</guid>
+      <guid>/post/create-blog-with-hugo/</guid>
       <description>Hugo := markdown files-&amp;gt;&amp;gt;static html web site
 Hugo  快速+現代的網站引擎 跨平台 使用golang撰寫 開源而且免費 根據自己的作業系統下載編譯好的可執行檔  優點：
  據說很快！（等文章多了以後再回來研究是有多快, 呵呵） 搭配github page使用無限流量，省去維護主機的成本 不用擔心部落格供應商倒閉 功能不夠可以自己fork增加或修改 比較不用擔心網站被打下來（？） 官方有很完整的user guide可以參考  缺點：
