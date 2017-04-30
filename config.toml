@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Qtlin.tw blog"
+title = "Qtlin"
 languageCode = "zh-TW"
 disqusShortname = "blog-qtlin" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
@@ -25,7 +25,7 @@ paginate = 10
 
 
 [author]
-    name = "qtlintw"
+    name = "qtlin"
 
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.

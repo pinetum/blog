@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Qtlin.tw blog</title>
+    <title>Posts on Qtlin</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Qtlin.tw blog</description>
+    <description>Recent content in Posts on Qtlin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
     <lastBuildDate>Thu, 27 Apr 2017 21:25:06 +0800</lastBuildDate>
