@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "Fira Code", "cwTeXHei", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family:  "cwTeXHei", "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
