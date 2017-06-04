@@ -6,10 +6,24 @@
     <description>Recent content on Qtlin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Thu, 27 Apr 2017 21:25:06 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jun 2017 00:38:14 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>安裝 OpenConnect VPN Serve(ocserv) 於 raspberry pi</title>
+      <link>/post/ocserv-on-rpi/</link>
+      <pubDate>Mon, 05 Jun 2017 00:38:14 +0800</pubDate>
+      
+      <guid>/post/ocserv-on-rpi/</guid>
+      <description>安裝相依套件
+apt-get install make liblz4-dev libseccomp-dev libreadline-dev libnl-route-3-dev libkrb5-dev libprotobuf-c0-dev libtalloc-dev libgnutls28-dev libwrap0-dev libpam0g-dev libhttp-parser-dev libpcl1-dev libopts25-dev autogen protobuf-c-compiler gperf liblockfile-bin nuttcp texinfo libev4 libev-devel  編譯libtasn1
+wget http://ftp.gnu.org/gnu/libtasn1/libtasn1-4.7.tar.gz tar zxf libtasn1*.gz &amp;amp;&amp;amp; cd libtasn1* ./configure make make install  編譯ocserv
+wget ftp://ftp.infradead.org/pub/ocserv/ocserv-0.11.8.tar.xz tar xvf ocserv-0.11.8.tar.xz cd ocserv-0.11.8 ./configure --disable-seccomp make make install  新建ocserv資料夾，並加入config檔案
+mkdir -p /etc/ocserv cp doc/ocserv/doc/sample.config /etc/ocserv/ocserv.config  參數檔範例：
+auth = &amp;quot;plain[passwd=/etc/ocserv/ocpasswd]&amp;quot; tcp-port = 443 udp-port = 443 run-as-user = nobody run-as-group = daemon socket-file = /var/run/ocserv-socket server-cert = /etc/ocserv/certificate.</description>
+    </item>
     
     <item>
       <title>給程式人專用的字型 Firacode</title>
