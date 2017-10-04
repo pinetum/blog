@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>於macOS上建立MT7697開發環境（使用GCC） &middot; qtlin</title>
+
+  
+  <link rel="stylesheet" href="/css/poole.css">
+  <link rel="stylesheet" href="/css/hyde.css">
+  <link rel="stylesheet" href="/css/poole-overrides.css">
+  <link rel="stylesheet" href="/css/hyde-overrides.css">
+  <link rel="stylesheet" href="/css/hyde-x.css">
+  <link rel="stylesheet" href="/css/highlight/sunburst.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/override_.css">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link href="/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="因緣際會獲得了Linkit 7697 HDK 開發版，但官方僅針對windows與Ubuntu提供SDK，如果想在macOS上開發需要對官方的SDK加一點料。">
+  <meta name="keywords" content="">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-80879951-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+        <img src="https://www.gravatar.com/avatar/60c67aaad4f1c453fc912ed7ebaa2f10?s=200">
+      
+      <h1>qtlin</h1>
+      <p class="lead">優雅宅</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="/projects">Projects</a></li>
+      
+      <li class="sidebar-nav-item"><a href="http://qtlin.tw">Resume</a></li>
+      
+    </ul>
+  </div>
+  <div class="container sidebar-sticky-btm">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/pinetum"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      
+      <a href="https://www.linkedin.com/in/qtlintw"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      
+      
+      
+      
+      <a href="/index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2017 <a href="/license/">License</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">於macOS上建立MT7697開發環境（使用GCC）</h1>
+    <span class="post-date">Oct 4, 2017 &middot; <a href="/post/mt7697-gcc-on-macos/#disqus_thread">Comments</a>
+    
+    <br/>
+    
+    </span>
+    
+
+<p>因緣際會獲得了Linkit 7697 HDK 開發版，但官方僅針對windows與Ubuntu提供SDK，如果想在macOS上開發需要對官方的SDK加一點料。</p>
+
+<h4 id="本文大綱">本文大綱</h4>
+
+<ul>
+<li>下載官方SDK</li>
+<li>下載GNU Arm Embedded Toolchain for macOS</li>
+<li>將SDK中的Toolchain替換成macOS版本</li>
+<li>下載Flash tool</li>
+<li>修改Makefile支援燒錄</li>
+<li>開發流程</li>
+</ul>
+
+<h4 id="下載官方sdk">下載官方SDK</h4>
+
+<p>最新版本的SDK可於下方連結下載，目前最新版本為4.6.0
+<a href="https://docs.labs.mediatek.com/resource/mt7687-mt7697/zh_tw/downloads" target="_blank">https://docs.labs.mediatek.com/resource/mt7687-mt7697/zh_tw/downloads</a></p>
+
+<h4 id="下載gnu-arm-embedded-toolchain-for-macos">下載GNU Arm Embedded Toolchain for macOS</h4>
+
+<p>我使用的版本為 <code>4.8.3-2014q1</code></p>
+
+<p><a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads" target="_blank">https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads</a></p>
+
+<h4 id="替換toolchain">替換Toolchain</h4>
+
+<p>於官方下載的SDK中所附的Toolchain為給Ubuntu使用，需要使用macOS版本的Toolchain覆蓋</p>
+
+<p>將官方SDK與toolchain解壓縮</p>
+
+<p>toolchain解壓縮後會有以下資料夾，將<code>LinkIt_SDK_V4.6.0_public/tools/gcc/gcc-arm-none-eabi</code>資料夾中內容清空，並使用新下載的內容替換</p>
+
+<pre><code class="language-bash">arm-none-eabi
+bin
+lib
+share
+</code></pre>
+
+<h4 id="下載flash-tool">下載Flash tool</h4>
+
+<pre><code class="language-bash">cd path/to/LinkIt_SDK_V4.6.0_public/tools
+git clone https://github.com/MediaTek-Labs/mt76x7-uploader flash_tool
+</code></pre>
+
+<h4 id="修改makefile支援燒錄">修改Makefile支援燒錄</h4>
+
+<p>於專案下的GCC資料夾中的Makefile增加flash，往後僅需要make flash即可燒錄並開啟serial port</p>
+
+<pre><code>flash:
+    $(SOURCE_DIR)/tools/flash/upload.py -c /dev/cu.SLAB_USBtoUART -n $(SOURCE_DIR)/tools/flash//da97.bin -f $(OUTPATH)/$(PROJ_NAME).bin
+    screen /dev/tty.SLAB_USBtoUART 115200
+</code></pre>
+
+<h4 id="開發流程">開發流程</h4>
+
+<ul>
+<li><p>新建專案</p>
+
+<pre><code class="language-bash">cd path/to/LinkIt_SDK_V4.6.0_public/project/linkit7697_hdk/templates/
+cp -r freertos_initialize_main_features ../apps/project_name
+</code></pre></li>
+
+<li><p>編譯</p>
+
+<pre><code class="language-bash">cd path/to/LinkIt_SDK_V4.6.0_public/project/linkit7697_hdk/apps/project_name/GCC
+make -j8
+</code></pre></li>
+
+<li><p>燒錄/開啟serial port</p>
+
+<pre><code class="language-bash">make flash
+</code></pre></li>
+</ul>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "blog-qtlin";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "blog-qtlin";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
+
