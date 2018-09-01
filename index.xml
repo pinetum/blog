@@ -6,10 +6,36 @@
     <description>Recent content on Qtlin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 04 Oct 2017 19:11:31 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Sep 2018 09:09:31 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用Virtualbox對外接USB硬碟中的Windows10開機</title>
+      <link>/post/virtualbox-boot-win10-from-usb/</link>
+      <pubDate>Sat, 01 Sep 2018 09:09:31 +0800</pubDate>
+      
+      <guid>/post/virtualbox-boot-win10-from-usb/</guid>
+      <description> 準備事項：
+ Mac一台 usb外接硬碟（建議SSD） 安裝好Virtualbox 基本的termainal操作  建立USB外接硬碟的vmdk檔案 開啟磁碟工具程式將外接硬碟的所有磁區卸除(unmount) 卸除後磁碟會以灰色字顯示 開啟terminal並輸入diskutil list找到自己的外接硬碟代號
+/dev/disk4 (external, physical): #: TYPE NAME SIZE IDENTIFIER 0: FDisk_partition_scheme *250.1 GB disk4 1: Windows_NTFS 系統保留 575.7 MB disk4s1 2: Windows_NTFS BOOTCAMP 249.5 GB disk4s2  根據自己的硬碟代號建立vmdk檔案使用terminal輸入指令
+sudo VBoxManage internalcommands createrawvmdk -filename ~/VirtualBox\ VMs/disk4.vmdk -rawdisk /dev/disk4  其中/dev/disk4請替換成自己的硬碟代號，~/VirtualBox\ VMs/disk4.vmdk替換成vmdk檔案要放置的路徑
+將磁碟與vmdk檔案權限改為777
+sudo chmod 777 ~/VirtualBox\ VMs/disk4.vmdk sudo chmod 777 /dev/disk4  於Virtualbox建立虛擬機  輸入名稱 選擇作業系統類型與版本 調整記憶體大小 硬碟指定為使用現有虛擬硬碟檔案將檔案選為剛剛產生的vmdk檔案  接著就可以對虛擬機開機，就可以直接對外接硬碟開機並使用 若外接硬碟為空的，尚未安裝Windows可以直接透過Virtualbox安裝（插入windows 10安裝ISO檔）</description>
+    </item>
+    
+    <item>
+      <title>使用Mosquitto作為MQTT broker並支援websockets連線</title>
+      <link>/post/mqtt-with-websocket-mosquitto/</link>
+      <pubDate>Wed, 18 Apr 2018 20:35:40 +0800</pubDate>
+      
+      <guid>/post/mqtt-with-websocket-mosquitto/</guid>
+      <description>安裝 mosquitto  brew install mosquitto
+ 啟動服務  brew services start mosquitto
+編輯/usr/local/etc/mosquitto/mosquitto.conf
+# 原本mqtt broker的port listener 1883 protocol mqtt # 使用1884作為websockets使用的port listener 1884 protocol websockets   重新啟動服務  brew services restart mosquitto</description>
+    </item>
     
     <item>
       <title>於macOS上建立MT7697開發環境（使用GCC）</title>
