@@ -1,11 +1,11 @@
-+++
-categories = []
-date = "2018-09-01T09:09:31+08:00"
-description = "將windows 10安裝在USB外接硬碟中並使用Virtualbox開機"
-keywords = ["win10", "virtualbox"]
-title = "使用Virtualbox對外接USB硬碟中的Windows10開機"
+---
+categories : []
+date : "2018-09-01T09:09:31+08:00"
+description : "將windows 10安裝在USB外接硬碟中並使用Virtualbox開機"
+keywords : ["win10", "virtualbox"]
+title : "使用Virtualbox對外接USB硬碟中的Windows10開機"
 
-+++
+---
 
 
 準備事項：

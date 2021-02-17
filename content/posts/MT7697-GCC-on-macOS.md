@@ -1,11 +1,11 @@
-+++
-categories = []
-date = "2017-10-04T19:11:31+08:00"
-description = "因緣際會獲得了Linkit 7697 HDK 開發版，但官方僅針對windows與Ubuntu提供SDK，如果想在macOS上開發需要對官方的SDK加一點料。"
-keywords = []
-title = "於macOS上建立MT7697開發環境（使用GCC）"
+---
+categories : []
+date : "2017-10-04T19:11:31+08:00"
+description : "因緣際會獲得了Linkit 7697 HDK 開發版，但官方僅針對windows與Ubuntu提供SDK，如果想在macOS上開發需要對官方的SDK加一點料。"
+keywords : []
+title : "於macOS上建立MT7697開發環境（使用GCC）"
 
-+++
+---
 
 因緣際會獲得了Linkit 7697 HDK 開發版，但官方僅針對windows與Ubuntu提供SDK，如果想在macOS上開發需要對官方的SDK加一點料。
 

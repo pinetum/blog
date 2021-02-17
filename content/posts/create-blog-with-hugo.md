@@ -1,11 +1,11 @@
-+++
-categories = ["golang", "hugo"]
-date = "2017-04-23T00:22:30+08:00"
-description = "Hugo := markdown files->>static html web site"
-keywords = ["hugo", "golang"]
-title = "使用hugo建立靜態的blog"
+---
+categories : ["golang", "hugo"]
+date : "2017-04-23T00:22:30+08:00"
+description : "Hugo := markdown files->>static html web site"
+keywords : ["hugo", "golang"]
+title : "使用hugo建立靜態的blog"
 
-+++
+---
 Hugo := markdown files->>static html web site
 ## <a href="https://gohugo.io" target="_blank">Hugo</a>
 

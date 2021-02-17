@@ -1,11 +1,11 @@
-+++
-categories = ["敗家"]
-date = "2017-04-23T01:07:32+08:00"
-description = "一個日本Amazon.co直送台灣的故事。 "
-keywords = []
-title = "PFU HHKB Pro 2 墨色 無刻"
+---
+categories : ["敗家"]
+date : "2017-04-23T01:07:32+08:00"
+description : "一個日本Amazon.co直送台灣的故事。 "
+keywords : []
+title : "PFU HHKB Pro 2 墨色 無刻"
 
-+++
+---
 
 心中一直有一個願望
 

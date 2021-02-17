@@ -1,0 +1,2 @@
+{{- $key := cond .IsNamedParams (.Get "key") (.Get 0) -}}
+<span class="kbd">{{$key}}</span>
