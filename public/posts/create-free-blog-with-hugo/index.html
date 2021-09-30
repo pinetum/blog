@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>使用hugo建立完全免費的blog &middot; qtlin</title>
+
+  
+  <link rel="stylesheet" href="/css/poole.css">
+  <link rel="stylesheet" href="/css/hyde.css">
+  <link rel="stylesheet" href="/css/poole-overrides.css">
+  <link rel="stylesheet" href="/css/hyde-overrides.css">
+  <link rel="stylesheet" href="/css/hyde-x.css">
+  <link rel="stylesheet" href="/css/highlight/sunburst.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/override_.css">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link href="/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="建立免維護費用的部落格">
+  <meta name="keywords" content="hugo,golang,blog">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-80879951-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+        <img src="https://www.gravatar.com/avatar/60c67aaad4f1c453fc912ed7ebaa2f10?s=200">
+      
+      <h1>qtlin</h1>
+      <p class="lead">優雅宅</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="/">Blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="/projects">Projects</a></li>
+      
+    </ul>
+  </div>
+  <div class="container sidebar-sticky-btm">
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/pinetum"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      
+      <a href="https://www.linkedin.com/in/qtlintw"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      
+      
+      
+      
+      <a href="/index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2021 <a href="/license/">License</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">使用hugo建立完全免費的blog</h1>
+    <p>本文將介紹如何使用hugo搭配gitlab/github pages建立一個免維護費用的部落格!</p>
+<h2 id="hugo簡介與安裝">hugo簡介與安裝</h2>
+<p>在CMS(content management system)當中最主流的套裝軟體非Wordpress莫屬，但維護一個wordpress其實是成本昂貴的，你可能可以直接向wordpress.com購買服務或是自行租用虛擬主機架設，也因為wordpress的市占率很高加上是開放原始碼的系統，成為駭客的首要研究目標，所以可能還需要關注是否有漏洞，自己有沒有受影響與需不需要升級，升級有失敗的風險等等。</p>
+<p>而CMS還有另一種選擇&ndash;靜態網站生成器，著名的有Hugo、Jekyll、Hexo、Octopress等(按github星星數目排序)，其中各有優缺點，雖然相較之下hugo的插件與主題數目可能不多，但是他速度非常快且安裝非常簡單。</p>
+<p>Hugo為golang撰寫的程式，支援大部分的作業系統:(macOS (Darwin) for x64, i386, and ARM architectures, Windows, Linux, OpenBSD, FreeBSD)</p>
+<h3 id="下載與安裝hugo">下載與安裝Hugo</h3>
+<p>可以透過套件管理程式安裝，例如:<code>sudo apt install hugo</code>(Ubuntu/debain)<code>brew install hugo</code>(macOS)<code>choco  install hugo</code>，如此一來就安裝完畢了。</p>
+<p>如果沒有套件管理程式也沒關係，可以進入Hugo於<a href="https://github.com/gohugoio/hugo/releases">github的release page</a>根據自己的作業系統版本選擇並下載，例如windows版請找到<a href="https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Windows-64bit.zip">hugo_0.80.0_Windows-64bit.zip</a></p>
+<p>解壓縮後將他放到系統PATH路徑底下即可:</p>
+<ul>
+<li>Linux/macOS: <code>/usr/local/bin</code></li>
+<li>Windows: 可以在c槽建立一個hugo資料夾，並將hugo.exe放入最後將<code>c:\hugo</code>加入系統的環境變數中</li>
+</ul>
+<p>接著就可以測試安裝有沒有成功，開啟Terminal並輸入<code>hugo version</code>  (windows請開啟<code>命令提示字元</code>)</p>
+<pre><code>Hugo Static Site Generator v0.80.0-792EF0F4 linux/amd64 BuildDate: 2020-12-31T13:37:58Z
+</code></pre><p>如果出現版本資訊就代表安裝成功囉</p>
+<h2 id="建立網站">建立網站</h2>
+<p>首先移動Terminal的路徑到你要存放網站原始碼的路徑，接著我們就可以透過指令<code>hugo new site mySite</code>來建立第一個網站，其中<code>mySite</code>可以替換成你的網站名稱</p>
+<pre><code>Congratulations! Your new Hugo site is created in ~/test/mySite.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
+</code></pre><p>出現上面的訊息就代表建立成功了，接著我們先到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>挑選網站的佈景主題吧。</p>
+<h3 id="挑選布景主題">挑選布景主題</h3>
+<h3 id="建立文章">建立文章</h3>
+<h3 id="啟動本地的伺服器">啟動本地的伺服器</h3>
+<h3 id="語法簡介">語法簡介</h3>
+<h3 id="自動縮圖">自動縮圖</h3>
+<h3 id="浮水印">浮水印</h3>
+<h2 id="部屬網站">部屬網站</h2>
+<h3 id="github-pages">github pages</h3>
+<h3 id="gitlab-pages">gitlab pages</h3>
+<h3 id="自動化部屬">自動化部屬</h3>
+<h3 id="自訂網域網址">自訂網域(網址)</h3>
+
+  </div>
+</div>
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
+

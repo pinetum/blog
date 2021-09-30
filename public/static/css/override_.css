@@ -1,31 +1,8 @@
-@font-face{
-    font-family: 'Fira Code';
-    unicode-range: U+00-7F; /* ASCII */
-    src: url('/static/eot/FiraCode-Regular.eot');
-    src: url('/static/eot/FiraCode-Regular.eot') format('embedded-opentype'),
-         url('/static/woff2/FiraCode-Regular.woff2') format('woff2'),
-         url('/static/woff/FiraCode-Regular.woff') format('woff'),
-         url('/static/ttf/FiraCode-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'cwTeXHei';
-  font-style: normal;
-  font-weight: 500;
-  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
-  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
-}
-code{
-    font-family: 'Fira Code';
-}
+
 .sidebar-about img{
     border-radius: 50%;
 }
-kbd {
+.kbd {
      -moz-border-radius:3px;
     -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
     -webkit-border-radius:3px;
@@ -37,9 +14,6 @@ kbd {
     color:#333;
     display:inline-block;
     font-family:Arial,Helvetica,sans-serif;
-    
-    
-    margin:0 .1em;
     padding:.1em .6em;
     text-shadow:0 1px 0 #fff;
     

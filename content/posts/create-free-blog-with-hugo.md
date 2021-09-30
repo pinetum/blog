@@ -4,6 +4,7 @@ date : "2021-02-16T00:22:30+08:00"
 description : "建立免維護費用的部落格"
 keywords : ["hugo", "golang", "blog"]
 title : "使用hugo建立完全免費的blog"
+draft: true
 
 ---
 

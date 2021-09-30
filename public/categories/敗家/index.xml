@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>敗家 on Qtlin</title>
@@ -6,17 +6,13 @@
     <description>Recent content in 敗家 on Qtlin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Sun, 23 Apr 2017 01:07:32 +0800</lastBuildDate>
-    
-	<atom:link href="/categories/%E6%95%97%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Apr 2017 01:07:32 +0800</lastBuildDate><atom:link href="/categories/%E6%95%97%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PFU HHKB Pro 2 墨色 無刻</title>
-      <link>/post/hhkb-pro2/</link>
+      <link>/posts/hhkb-pro2/</link>
       <pubDate>Sun, 23 Apr 2017 01:07:32 +0800</pubDate>
       
-      <guid>/post/hhkb-pro2/</guid>
+      <guid>/posts/hhkb-pro2/</guid>
       <description>心中一直有一個願望
 擁有一支好打、順手的鍵盤，但又不想一把換過一把，掉入鍵盤坑裡。 據說去年中就已經開始可以在Amazon訂貨，不用透過代買，直接寄送到台灣，這是一件多麽方便的事情啊！！
 所以不小心就按下了訂購按鈕&amp;hellip;&amp;hellip; 如何在Macbook上使用得順手 第一步當然是直接把鍵盤架在原本的鍵盤上！ 不過這樣放下去以後，常常會壓到原本內建鍵盤的按鍵，所以我們需要使用Karabiner設定在插入外接鍵盤時，停用內建鍵盤

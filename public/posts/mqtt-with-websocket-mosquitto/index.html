@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>hugo &middot; qtlin</title>
+  <title>使用Mosquitto作為MQTT broker並支援websockets連線 &middot; qtlin</title>
 
   
   <link rel="stylesheet" href="/css/poole.css">
@@ -27,9 +27,9 @@
   
   
   
-  <link href="/categories/hugo/index.xml" rel="alternate" type="application/rss+xml" title="Qtlin &middot; qtlin" />
+  
 
-  <meta name="description" content="">
+  <meta name="description" content="MQTT x Websocket x Mosquitto">
   <meta name="keywords" content="">
   
   <script>
@@ -84,16 +84,29 @@
 
 
 <div class="content container">
-  <ul class="posts">
-  
-    <li><a href="/posts/create-blog-with-hugo/">使用hugo建立靜態的blog</a>
-    
-    &middot;
-    <a class="label" href="/categories/golang">golang</a><a class="label" href="/categories/hugo">hugo</a>
-    </span>
-    &middot; <time>Apr 23, 2017</time></li>
-  
-  </ul>
+  <div class="post">
+    <h1 class="post-title">使用Mosquitto作為MQTT broker並支援websockets連線</h1>
+    <ul>
+<li>安裝 mosquitto</li>
+</ul>
+<p><code>brew install mosquitto</code></p>
+<ul>
+<li>啟動服務</li>
+</ul>
+<p><code>brew services start mosquitto</code></p>
+<p>編輯<code>/usr/local/etc/mosquitto/mosquitto.conf</code></p>
+<pre><code># 原本mqtt broker的port
+listener 1883
+protocol mqtt
+# 使用1884作為websockets使用的port
+listener 1884
+protocol websockets
+</code></pre><ul>
+<li>重新啟動服務</li>
+</ul>
+<p><code>brew services restart mosquitto</code></p>
+
+  </div>
 </div>
 <script src="/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

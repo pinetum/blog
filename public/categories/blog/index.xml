@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Qtlin</title>
+    <link>/categories/blog/</link>
+    <description>Recent content in blog on Qtlin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Tue, 16 Feb 2021 00:22:30 +0800</lastBuildDate><atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用hugo建立完全免費的blog</title>
+      <link>/posts/create-free-blog-with-hugo/</link>
+      <pubDate>Tue, 16 Feb 2021 00:22:30 +0800</pubDate>
+      
+      <guid>/posts/create-free-blog-with-hugo/</guid>
+      <description>本文將介紹如何使用hugo搭配gitlab/github pages建立一個免維護費用的部落格!
+hugo簡介與安裝 在CMS(content management system)當中最主流的套裝軟體非Wordpress莫屬，但維護一個wordpress其實是成本昂貴的，你可能可以直接向wordpress.com購買服務或是自行租用虛擬主機架設，也因為wordpress的市占率很高加上是開放原始碼的系統，成為駭客的首要研究目標，所以可能還需要關注是否有漏洞，自己有沒有受影響與需不需要升級，升級有失敗的風險等等。
+而CMS還有另一種選擇&amp;ndash;靜態網站生成器，著名的有Hugo、Jekyll、Hexo、Octopress等(按github星星數目排序)，其中各有優缺點，雖然相較之下hugo的插件與主題數目可能不多，但是他速度非常快且安裝非常簡單。
+Hugo為golang撰寫的程式，支援大部分的作業系統:(macOS (Darwin) for x64, i386, and ARM architectures, Windows, Linux, OpenBSD, FreeBSD)
+下載與安裝Hugo 可以透過套件管理程式安裝，例如:sudo apt install hugo(Ubuntu/debain)brew install hugo(macOS)choco install hugo，如此一來就安裝完畢了。
+如果沒有套件管理程式也沒關係，可以進入Hugo於github的release page根據自己的作業系統版本選擇並下載，例如windows版請找到hugo_0.80.0_Windows-64bit.zip
+解壓縮後將他放到系統PATH路徑底下即可:
+ Linux/macOS: /usr/local/bin Windows: 可以在c槽建立一個hugo資料夾，並將hugo.exe放入最後將c:\hugo加入系統的環境變數中  接著就可以測試安裝有沒有成功，開啟Terminal並輸入hugo version (windows請開啟命令提示字元)
+Hugo Static Site Generator v0.80.0-792EF0F4 linux/amd64 BuildDate: 2020-12-31T13:37:58Z如果出現版本資訊就代表安裝成功囉
+建立網站 首先移動Terminal的路徑到你要存放網站原始碼的路徑，接著我們就可以透過指令hugo new site mySite來建立第一個網站，其中mySite可以替換成你的網站名稱
+Congratulations! Your new Hugo site is created in ~/test/mySite.Just a few more steps and you&#39;re ready to go:1.</description>
+    </item>
+    
+  </channel>
+</rss>
