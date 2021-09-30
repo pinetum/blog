@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qtlin</title>
-    <link>/</link>
-    <description>Recent content on Qtlin</description>
+    <title>Posts on Qtlin</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Qtlin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Sat, 01 Sep 2018 09:09:31 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Sep 2018 09:09:31 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Virtualbox對外接USB硬碟中的Windows10開機</title>
       <link>/posts/virtualbox-boot-win10-from-usb/</link>
@@ -101,45 +101,6 @@ Hugo  快速+現代的網站引擎 跨平台 使用golang撰寫 開源而且免�
 安裝 使用brew可以快速的在macOS上安裝
 $ brew update &amp;amp;&amp;amp; brew install hugo 基本指令 懶人就只要記這些啦ob&#39;_&amp;lsquo;ov
 # 建立新的網站 $ hugo new site bookshelf # 建立新頁面 $ hugo new about.md # 建立新文章（部落格使用時） $ hugo new post/hello-world.md # 建立Server可以使用瀏覽器預覽，於修改markdown檔案時會自動重新整理網頁 $ hugo server # 產生靜態html檔案到public資料夾內 $ hugo Themes 想要潮一點，請到Hugo Themes Site挑一個順眼的主題來安裝，基本上主題的簡介都會有安裝的流程說明，將主題下載後放到hugo目錄下的themes目錄，並根據所選主題修改config.</description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>/resume/</link>
-      <pubDate>Tue, 18 Apr 2017 08:09:41 +0800</pubDate>
-      
-      <guid>/resume/</guid>
-      <description>CONTACT INFORMATION   Email  qtlintw@gmail.com   Phone  +886-987-588-589    EDUCATION  Yuan-Ze University  2012/09-2016/06 Communications Engineering Bachelor  WORK EXPERIENCE  Yuan-Ze University - Communications Engineering  Multimedia Processing and Telemedicine Lab 2015/03-2016/08 Research Assistant  Yuan-Ze University - Office of Library and Information Services  Section of System Development 2014/05-2015/06 Part time  SKILLS   Web Development Android App Development IOS App Development MCU, SOC Development Windows App Development Image Processing Artificial Neural Networks Machine Learning Data Mining  </description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Tue, 18 Apr 2017 08:09:17 +0800</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>AirUnlock Line weather bot Image analysis system Indoor plant factory National Symposium on Telecommunication (NST2015) (closed)  AirUnlock Build an application on macbook and android phone for wake/lock/unlock macbook wireless (Bluetooth Low Energy).
-Line weather bot Create a line bot to get a weather overview of the location.
-Image analysis system Build an online image analysis and management system. Integrating PHP with openCV enables image processing to be performed on a web page.</description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>/about/</link>
-      <pubDate>Tue, 18 Apr 2017 08:09:01 +0800</pubDate>
-      
-      <guid>/about/</guid>
-      <description>asdasdsdsa</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/license/</guid>
-      <description>姓名標示─非商業性─相同方式分享
-本授權條款允許使用者重製、散佈、傳輸以及修改著作，但不得為商業目的之使用。若使用者修改該著作時，僅得依本授權條款或與本授權條款類似者來散佈該衍生作品。使用時必須按照著作人指定的方式表彰其姓名。</description>
     </item>
     
   </channel>
